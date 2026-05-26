@@ -1,0 +1,32 @@
+/* UserDetail Styles */
+.user-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+/* the ten de o giua, can doi 2 ben  */
+.the_ten{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #333;
+
+
+}
+/* edit nut xem anh giong nut  hinh vuong co border-radius*/
+.xem_anh{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    background-color: #007bff;  
+    color: white;   
+    border: none;
+    cursor: pointer;
+    
+}

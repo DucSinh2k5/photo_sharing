@@ -2,3 +2,9 @@
   height: 60;
   justify-content: "center";
 }
+/* edit topbar-detail: */
+
+.topbar-detail {
+  position: absolute;
+  right: 20px;
+}

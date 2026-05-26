@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import {
   Divider,
   List,
@@ -9,6 +9,7 @@ import {
 
 import "./styles.css";
 import models from "../../modelData/models";
+import { Link } from "react-router-dom";
 
 /**
  * Define UserList, a React component of Project 4.
@@ -23,18 +24,26 @@ function UserList () {
           and <a href="https://mui.com/components/dividers/">Dividers</a> to
           display your users like so:
         </Typography>
+        
         <List component="nav">
           {users.map((item) => (
-            <>
+            <Fragment key={item._id}>
               <ListItem>
-                      <ListItemText primary={item.first_name}/>
+                <ListItemText
+                  primary={
+                    <Typography component={Link} to={`/users/${item._id}`}>
+                      {item.first_name} {item.last_name}
+                    </Typography>
+                  }
+                />
               </ListItem>
               <Divider />
-            </>
+            </Fragment>
           ))}
         </List>
         <Typography variant="body1">
           The model comes in from models.userListModel()
+
         </Typography>
       </div>
     );
