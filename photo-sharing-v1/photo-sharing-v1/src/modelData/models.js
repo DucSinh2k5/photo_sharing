@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 /**
  * Model data for Project 4 - the photo sharing site.
